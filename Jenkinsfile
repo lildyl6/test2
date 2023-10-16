@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps{
-                sh 'javac src/Main.java'
+                sh 'javac -d . src/Main.java'
             }
         }
         stage('Run'){
             steps{
-                sh 'java src.Main'
+                sh 'java -cp . src.Main'
             }
         }
     }
