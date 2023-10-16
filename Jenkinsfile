@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run'){
             steps{
-                sh 'java Main.class'
+                sh 'java Main'
             }
         }
     }
