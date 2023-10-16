@@ -7,5 +7,10 @@ pipeline {
                 sh 'javac src/Main.java'
             }
         }
+        stage('Run'){
+            steps{
+                sh 'java Main.class'
+            }
+        }
     }
 }
